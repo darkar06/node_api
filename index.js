@@ -84,7 +84,7 @@ app.use(()=>{
     console.log("ha funionao")
 })
 
-const port = 3004;
+const port = process.env-PORT || 3004;
 app.listen(port,()=>{
     console.log("server on port " + port)
 })
